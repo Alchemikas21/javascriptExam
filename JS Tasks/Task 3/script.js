@@ -12,3 +12,8 @@ turėti bent minimalų stilių ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = "https://api.github.com/users";
+
+fetch("https://api.github.com/users")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(e => console.log(e.message))

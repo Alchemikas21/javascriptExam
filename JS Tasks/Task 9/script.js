@@ -22,15 +22,19 @@ class Movie {
       document.body.appendChild(createdparagraphElement);
       if (budget > isExpensive) {
         createdparagraphElement.innerText = "the movie is expensive";
+        console.log(budget > isExpensive ? true : false);
       } else {
         createdparagraphElement.innerText = "the movie is inexpensive";
+        console.log(budget > isExpensive ? true : false);
       }
     };
   }
 }
 
-const firstMovie = new Movie("movie", "director", 100_000_001);
+const firstMovie = new Movie("Heat", "White", 100_000_001);
 firstMovie.wasExpensive();
 
-const secondMovie = new Movie("movie", "director", 100_000);
+const secondMovie = new Movie("Heat2", "Pinkman", 100_000);
 secondMovie.wasExpensive();
+
+console.log(firstMovie)

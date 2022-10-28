@@ -12,21 +12,35 @@ class Calculator {
     this.substraction = substraction;
     this.multiplication = multiplication;
     this.division = division;
-    this.calculateResults = (a, b) => {
+    this.calculateSum = (a, b) => {
       this.sum = a + b;
-      this.substraction = a - b;
-      this.multiplication = a * b;
-      this.division = a / b;
+    };
 
+    this.calculateSubstraction = (a, b) => {
+      this.substraction = a - b;
+    };
+
+    this.calculateMulitiplication = (a, b) => {
+      this.multiplication = a * b;
+    };
+
+    this.calculateDivision = (a, b) => {
+      this.division = a / b;
     };
   }
 }
 const firstOperation = new Calculator();
-firstOperation.calculateResults(2, 2);
-
-console.log(firstOperation)
-
+firstOperation.calculateSum(2, 2);
+console.log(firstOperation.sum);
 
 const secondOperation = new Calculator();
-secondOperation.calculateResults(10,10);
-console.log(secondOperation)
+secondOperation.calculateMulitiplication(10, 10);
+console.log(secondOperation.multiplication);
+
+const thirdOperation = new Calculator();
+thirdOperation.calculateSubstraction(12, 1);
+console.log(thirdOperation.substraction);
+
+const fourthOperation = new Calculator();
+fourthOperation.calculateDivision(5, 2);
+console.log(fourthOperation.division);
