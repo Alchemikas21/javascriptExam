@@ -11,8 +11,12 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 const outputContainer = document.querySelector("#output");
 const createdHeaderElement = document.createElement("h");
 outputContainer.appendChild(createdHeaderElement);
-const createdparagraphElement = document.createElement("p");
-outputContainer.appendChild(createdparagraphElement);
+const firstCreatedparagraphElement = document.createElement("p");
+outputContainer.appendChild(firstCreatedparagraphElement);
+const secondCreatedparagraphElement = document.createElement("p");
+outputContainer.appendChild(secondCreatedparagraphElement);
+const thirdCreatedparagraphElement = document.createElement("p");
+outputContainer.appendChild(thirdCreatedparagraphElement);
 
 const convertWeight = document
   .querySelector("#weight-convert")
@@ -27,7 +31,15 @@ const convertWeight = document
     createdHeaderElement.style =
       "display: flex;margin-left:auto;margin-right:auto ;font-size:30px;font-weight:500;border: 3px inset gray ; width: 50%; justify-content:center; padding: 10px 10px; background-color: white; color:red;border-radius:10px 10px 0px 0px";
 
-    createdparagraphElement.innerText = `${convertToPounds}lbs  ${convertToGrams}g ${convertToOunces}oz`;
-    createdparagraphElement.style =
+    firstCreatedparagraphElement.innerText = convertToPounds + " lbs";
+    firstCreatedparagraphElement.style =
+      "display: flex; justify-content:center; padding: 10px 10px;margin-left:auto;margin-right:auto;font-size: 20px; border: 3px inset gray; width: 50%; justify-content:center; background-color: pink";
+
+    secondCreatedparagraphElement.innerText = convertToGrams + " g";
+    secondCreatedparagraphElement.style =
+      "display: flex; justify-content:center; padding: 10px 10px;margin-left:auto;margin-right:auto;font-size: 20px; border: 3px inset gray; width: 50%; justify-content:center; background-color: pink";
+
+    thirdCreatedparagraphElement.innerText = convertToOunces + " oz";
+    thirdCreatedparagraphElement.style =
       "display: flex; justify-content:center; padding: 10px 10px;margin-left:auto;margin-right:auto;font-size: 20px; border: 3px inset gray; width: 50%; justify-content:center; background-color: pink; border-radius:0px 0px 10px 10px";
   });

@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -27,3 +27,112 @@
   margin-top: 50px;
   color: #333;
 }
+
+@media only screen and (min-width: 1440px){
+
+#output {
+  border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+  border-width: 4px;
+  border-style: solid;
+  width: 70%;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size:15px;
+}
+
+td {
+  border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+
+th {
+  background-color: #FF8200;
+}
+
+tr {
+  background-color: #EF426F;
+}
+}
+
+@media only screen and (min-width: 720px){
+ 
+#output {
+  border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+  border-width: 2px;
+  border-style: solid;
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size:12px;
+}
+
+td {
+  border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+  border-width: 2px;
+  border-style: solid;
+}
+
+th {
+  background-color: #FF8200;
+}
+
+tr {
+  background-color: #EF426F;
+}
+}
+
+@media only screen and (max-width: 719px){
+  #output {
+    border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+    border-width: 4px;
+    border-style: solid;
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size:15px;
+  }
+  
+  td {
+    border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+    border-width: 4px;
+    border-style: solid;
+  }
+  
+  th {
+    background-color: #FF8200;
+  }
+  
+  tr {
+    background-color: #EF426F;
+  }
+  }
+  
+  @media only screen and (min-width: 720px){
+   
+  #output {
+    border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+    border-width: 1px;
+    border-style: solid;
+    width:fit-content;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-size:10px;
+    flex-wrap: nowrap;
+  }
+  
+  td {
+    border-image: linear-gradient(#EF426F, #00B2A9, #FF8200) 30;
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  th {
+    background-color: #FF8200;
+  }
+  
+  tr {
+    background-color: #EF426F;
+  }
+  }
+
